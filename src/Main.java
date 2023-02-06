@@ -35,7 +35,7 @@ public class Main {
                     break;
                 case 4:
                     System.out.println();
-
+                    printAllMedicinesWithSpecificImporter(pharmacies, scanner);
                     break;
                 case 5:
                     System.out.println();
@@ -69,6 +69,27 @@ public class Main {
                 if(d.getMedicine().getPrice() < price) {
                     newPharmacies.add(d);
                 }
+            }
+        }
+
+        for (Pharmacy d : newPharmacies) {
+            System.out.println(d.getMedicine().toString());
+        }
+    }
+
+    public static void printAllMedicinesWithSpecificImporter(ArrayList<Pharmacy> pharmacies, Scanner sc) {
+
+        ArrayList<Pharmacy> newPharmacies = new ArrayList<>();
+
+        String nothing = sc.nextLine();
+
+        System.out.println();
+        System.out.println("Enter a importer name: ");
+        String name = sc.nextLine();
+
+        for (Pharmacy d : pharmacies) {
+            if(d.getImporter().getName().equals(name)) {
+                newPharmacies.add(d);
             }
         }
 
