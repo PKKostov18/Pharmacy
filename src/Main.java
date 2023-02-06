@@ -12,7 +12,7 @@ public class Main {
             System.out.println("Menu");
             System.out.println("1. Enter information");
             System.out.println("2. Show all data");
-            System.out.println("3. Print all medicines with price and specific provider");
+            System.out.println("3. Print all medicines with price and specific manufacturer");
             System.out.println("4. Print all medicines imported from a specific person");
             System.out.println("5. Print all importers");
             System.out.println("6. Exit");
@@ -31,7 +31,7 @@ public class Main {
                     break;
                 case 3:
                     System.out.println();
-                    printAllMedicinesWithPriceAndSpecificProvider(pharmacies, scanner);
+                    printAllMedicinesWithPriceAndSpecificManufacturer(pharmacies, scanner);
                     break;
                 case 4:
                     System.out.println();
@@ -51,7 +51,7 @@ public class Main {
         }
     }
 
-    public static void printAllMedicinesWithPriceAndSpecificProvider(ArrayList<Pharmacy> pharmacies, Scanner sc) {
+    public static void printAllMedicinesWithPriceAndSpecificManufacturer(ArrayList<Pharmacy> pharmacies, Scanner sc) {
 
         ArrayList<Pharmacy> newPharmacies = new ArrayList<>();
 
