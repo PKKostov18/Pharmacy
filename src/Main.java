@@ -61,6 +61,7 @@ public class Main {
         System.out.println("Enter a price: ");
         double price = sc.nextDouble();
         System.out.println();
+        String nothing1 = sc.nextLine();
         System.out.println("Enter a manufacturer name: ");
         String name = sc.nextLine();
 
