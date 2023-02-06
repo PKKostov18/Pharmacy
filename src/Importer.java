@@ -42,7 +42,7 @@ public class Importer {
 
     @Override
     public String toString() {
-        return "Provider{" +
+        return "Importer{" +
                 "name='" + name + '\'' +
                 ", city='" + address + '\'' +
                 ", age=" + phoneNumber +

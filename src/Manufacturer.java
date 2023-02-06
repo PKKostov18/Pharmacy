@@ -42,7 +42,7 @@ public class Manufacturer {
 
     @Override
     public String toString() {
-        return "Provider{" +
+        return "Manufacturer{" +
                 "name='" + name + '\'' +
                 ", city='" + address + '\'' +
                 ", age=" + phoneNumber +
